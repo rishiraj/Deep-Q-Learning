@@ -35,7 +35,7 @@ if __name__ == '__main__':
 
         ddqn_scores.append(score)
 
-        avg_score = np.mean(scores[-100:])
+        avg_score = np.mean(ddqn_scores[-100:])
         print('episode: ', i,'score: %.2f' % score,
               ' average score %.2f' % avg_score)
 
