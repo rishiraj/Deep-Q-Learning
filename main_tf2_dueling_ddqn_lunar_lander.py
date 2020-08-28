@@ -31,7 +31,7 @@ if __name__ == '__main__':
             agent.store_transition(observation, action, reward, observation_, done)
             observation = observation_
             agent.learn()
-        eps_history.append(ddqn_agent.epsilon)
+        eps_history.append(agent.epsilon)
 
         ddqn_scores.append(score)
 
